@@ -2,8 +2,8 @@ video {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    position: fixed;
-    z-index: -1;
+    position: relative;
+    /* z-index: -1; */
 }
 
 .hero-container {
@@ -16,7 +16,7 @@ video {
     box-shadow: inset 0 0 0 1000px black;
     object-fit: contain;
     position: relative;
-    z-index: 0;
+    /* z-index: 0; */
 
 }
 
