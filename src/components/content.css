@@ -1,5 +1,5 @@
 .content {
-  padding: 4rem;
+  padding-top: 50px;
   background: #fff;
 }
 
@@ -115,6 +115,7 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .content_item {
     margin-bottom: 2rem;
+    
   }
 }
 
