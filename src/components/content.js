@@ -6,7 +6,7 @@ import milky from "./milkyway.jpg";
 
 const Content = () => (
         <div className="content">
-            <h1>Check this out!</h1>
+            <h1>This website is being built with React!</h1>
             <div className="content_container">
                 <div className="content_wrapper">
                     <ul className="content_items">
