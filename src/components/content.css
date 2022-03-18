@@ -43,20 +43,20 @@ h1 {
   overflow: hidden;
   text-decoration: none;
 }
-
+/* 
 .content_item_pic-wrap {
   position: relative;
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
-}
+} */
 
 .fade-img {
   animation-name: fade-img;
   animation-duration: 2s;
 }
 
-.content_item_pic-wrap::after {
+/* .content_item_pic-wrap::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
@@ -68,10 +68,10 @@ h1 {
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
-}
+} */
 
 .content_item_img {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -83,6 +83,7 @@ h1 {
   max-height: 100%;
   object-fit: cover;
   transition: all 0.2s linear;
+  /* padding-bottom: 2500px; */
 }
 
 .content_item_img:hover {
@@ -115,4 +116,11 @@ h1 {
   .content_item {
     margin-bottom: 2rem;
   }
+}
+
+
+.content > h1 {
+
+    font-family: "Brush Script MT", cursive;
+
 }
