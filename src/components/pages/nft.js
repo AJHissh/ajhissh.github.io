@@ -1,8 +1,10 @@
 import React from "react";
+import '../nft.css';
+
 
 const NFT = () => {
     return (
-        <div>
+        <div className="nft-main">
             <h1>NFT CONTENT</h1>
             <div>Will have content soon(NFT)</div>
                 <ul>#1</ul>
