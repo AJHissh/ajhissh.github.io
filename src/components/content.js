@@ -1,8 +1,9 @@
 import React from "react";
 import Items from "./items";
 import './content.css'
-import spaceimg from "./space.jpg";
-import milky from "./milkyway.jpg";
+import spaceimg from "./space.JPG";
+import milky from "./milkyway.JPG";
+import {Link} from 'react-router-dom';
 
 const Content = () => (
         <div className="content">
@@ -10,16 +11,20 @@ const Content = () => (
             <div className="content_container">
                 <div className="content_wrapper">
                     <ul className="content_items">
+                    <Link to ={spaceimg}>
                         <Items 
                         src={spaceimg}
                         text="This is test picture of a random vector in our universe"
                         label="universe"
                         path= "/home" />
+                    </Link>
+                    <Link to ={milky}>
                         <Items
                         src={milky}
                         text="This is a picture of the milkyway"
                         label="universe"
-                        path= "/home" />                             
+                        path= "/home" />
+                     </Link>                             
                     </ul>
                 </div>
 
