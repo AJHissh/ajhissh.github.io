@@ -1,13 +1,10 @@
 import React from "react";
-import Media from '../media'
 
-
-const About = () => {
+const Login = () => {
     return (
         <div>
-            <Media />
             <h1>About</h1>
-            <div>Will have content soon(About)</div>
+            <div>Will have content soon(LOGIN)</div>
                 <ul>#1</ul>
                 <ul>#2</ul>
                 <ul>#3</ul>
@@ -15,4 +12,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Login;

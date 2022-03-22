@@ -16,12 +16,12 @@ export const Button = ({
     ;
 
     return (
-        <Link to='/login' className='btn-mobile'>
+        // <Link to='/login' className='btn-mobile'>
             <button className={checkButtonSize && checkButtonStyle}
             onClick={onClick}
             type={type}>
                 {children}
             </button>
-        </Link>
+        // </Link>
     )
 };
