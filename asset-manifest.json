@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/test-app/static/css/main.07404962.css",
-    "main.js": "/test-app/static/js/main.a59809d2.js",
-    "static/js/787.a86f3764.chunk.js": "/test-app/static/js/787.a86f3764.chunk.js",
-    "static/media/vid2.mp4": "/test-app/static/media/vid2.39e6c79bffb375ae929a.mp4",
-    "static/media/vid.mp4": "/test-app/static/media/vid.59e75226d30ad48f9ede.mp4",
-    "static/media/milkyway.JPG": "/test-app/static/media/milkyway.a8e07c32a7422994c2ce.JPG",
-    "static/media/space.JPG": "/test-app/static/media/space.60b9c6c054e4fa1b9b49.JPG",
-    "index.html": "/test-app/index.html",
-    "main.07404962.css.map": "/test-app/static/css/main.07404962.css.map",
-    "main.a59809d2.js.map": "/test-app/static/js/main.a59809d2.js.map",
-    "787.a86f3764.chunk.js.map": "/test-app/static/js/787.a86f3764.chunk.js.map"
+    "main.css": "/static/css/main.07404962.css",
+    "main.js": "/static/js/main.282c4829.js",
+    "static/js/787.a86f3764.chunk.js": "/static/js/787.a86f3764.chunk.js",
+    "static/media/vid2.mp4": "/static/media/vid2.39e6c79bffb375ae929a.mp4",
+    "static/media/vid.mp4": "/static/media/vid.59e75226d30ad48f9ede.mp4",
+    "static/media/milkyway.jpg": "/static/media/milkyway.a8e07c32a7422994c2ce.jpg",
+    "static/media/space.jpg": "/static/media/space.60b9c6c054e4fa1b9b49.jpg",
+    "index.html": "/index.html",
+    "main.07404962.css.map": "/static/css/main.07404962.css.map",
+    "main.282c4829.js.map": "/static/js/main.282c4829.js.map",
+    "787.a86f3764.chunk.js.map": "/static/js/787.a86f3764.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07404962.css",
-    "static/js/main.a59809d2.js"
+    "static/js/main.282c4829.js"
   ]
 }
