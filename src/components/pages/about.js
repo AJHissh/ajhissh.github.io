@@ -1,11 +1,11 @@
 import React from "react";
-import Media from '../media'
+import Media2 from '../media2'
 
 
 const About = () => {
     return (
         <div>
-            <Media />
+            <Media2 />
             <h1>About</h1>
             <div>Will have content soon(About)</div>
                 <ul>#1</ul>
