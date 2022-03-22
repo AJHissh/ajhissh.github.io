@@ -1,8 +1,8 @@
 import React from "react";
 import Items from "./items";
 import './content.css'
-import spaceimg from "./space.JPG";
-import milky from "./milkyway.JPG";
+import spaceimg from "./space.jpg";
+import milky from "./milkyway.jpg";
 import {Link} from 'react-router-dom';
 
 const Content = () => (
