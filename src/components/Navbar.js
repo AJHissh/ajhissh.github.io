@@ -44,8 +44,8 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/NFT' className='nav-links' onClick={closeMobileMenu}>
-                        NFT's
+                    <Link to='/Forum' className='nav-links' onClick={closeMobileMenu}>
+                        Forum
                     </Link>
                 </li>
                 <li className='nav-item'>

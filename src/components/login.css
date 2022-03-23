@@ -2,7 +2,7 @@
     background-color: navy;
     position: relative;
     padding-top: 150px;
-    padding-bottom: 187px;
+    padding-bottom: 135px;
     }
 
 .login-link {
@@ -17,4 +17,10 @@
 
     margin-top: 400px;
 
+}
+
+h6 {
+    text-align: center;
+    color: white;
+    padding-top: 25px;
 }

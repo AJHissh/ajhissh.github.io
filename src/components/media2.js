@@ -11,7 +11,7 @@ function Media2() {
             <video src={video} type="video/mp4" autoPlay loop muted></video>
             <div className="box-one">
             <Link to='/About' className='btn-mobile'>
-                <Button className='btns' buttonStyles='btn--outline' buttonSize='btn--large'> About Me           
+                <Button className='btns' buttonStyles='btn--outline' buttonSize='btn--large'> About Us          
                 </Button>
             </Link>
             </div>

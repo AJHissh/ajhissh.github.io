@@ -17,7 +17,8 @@ const Login = () => {
                         <FcMultipleInputs /> Register
                     </Link>
             </ul>
-            </div>       
+            </div>
+            <h6>" Not functional when viewing from GitHub Pages "</h6>       
         </header>
     )
 }

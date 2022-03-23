@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/pages/home';
 import About from './components/pages/about';
-import NFT from './components/pages/nft';
+import Forum from './components/pages/forum';
 import Login from './components/pages/login';
 import Register from './components/pages/register';
 
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
-          <Route path='/NFT' element={<NFT />} />
+          <Route path='/Forum' element={<Forum />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Routes> 

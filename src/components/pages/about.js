@@ -1,16 +1,18 @@
 import React from "react";
-import Media2 from '../media2'
+import Media2 from '../media2';
+import '../about.css';
 
 
 const About = () => {
     return (
         <div>
             <Media2 />
-            <h1>About</h1>
-            <div>Will have content soon(About)</div>
-                <ul>#1</ul>
-                <ul>#2</ul>
-                <ul>#3</ul>
+            <div className="about-container-1">
+            <h2>This page will include: </h2>
+            <li>Profile</li>
+            <li>Interests</li>
+            <li>Goals</li>
+            </div>
         </div>
     )
 }

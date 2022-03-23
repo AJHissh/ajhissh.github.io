@@ -1,0 +1,12 @@
+.forum-main {
+    background-color: cornflowerblue;
+    padding-top: 150px;
+    padding-bottom: 377px;
+    position: relative;
+    text-align: center;
+}
+
+.forum-text {
+    margin-top: 200px;
+    position: relative;
+}
