@@ -31,6 +31,7 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
   }
   
   .fa-typo3 {
@@ -127,6 +128,7 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+     
     }
   
     .menu-icon {
@@ -137,6 +139,7 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
+      padding-top: 7px;
     }
   
     .fa-times {
