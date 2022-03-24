@@ -1,0 +1,16 @@
+.heading > h1 {
+    color: blueviolet;
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.heading {
+    padding-top: 200px;
+    background-color: #33ffba;
+    
+}
+
+.reg-form > p {
+    text-align: center;
+    padding-top: 50px;
+}
