@@ -14,7 +14,7 @@ const Content = () => (
                     <Link to ={spaceimg}>
                         <Items 
                         src={spaceimg}
-                        text="This is test picture of a random vector in our universe"
+                        text="This is test picture of a random vector of space"
                         label="universe"
                         path= "/home" />
                     </Link>
@@ -23,7 +23,7 @@ const Content = () => (
                         src={milky}
                         text="This is a picture of the milkyway"
                         label="universe"
-                        path= "/home" />
+                        path= "/home" />                      
                      </Link>                             
                     </ul>
                 </div>

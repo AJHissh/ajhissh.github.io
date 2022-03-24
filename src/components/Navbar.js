@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {FcGlobe} from "react-icons/fc";
 
 
 function Navbar() {
@@ -27,7 +28,7 @@ function Navbar() {
         <nav className = 'navbar'>
             <div className='navbar-container'>
                 <Link to='/' className='navbar-logo'>
-                    AH's Website <i className='fab fa-typo3' />
+                <FcGlobe/> <i class="fw fw-fw">  Andrew Hisshion</i> 
                 </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
