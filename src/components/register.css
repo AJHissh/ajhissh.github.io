@@ -14,3 +14,109 @@
     text-align: center;
     padding-top: 50px;
 }
+
+.form-group {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 112px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 920px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 130px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1030px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 140px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 145px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1120px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1120px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 165px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1270px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 175px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1350px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 183px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 195px;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1470px) {
+    .form-group {
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin-left: 205px;
+        margin-top: 25px;
+    }
+  } 

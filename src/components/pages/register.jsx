@@ -24,17 +24,28 @@ function Register() {
     <section className='reg-form'>
     <p> Fill in information to create account</p>
       <form>
-        <div className='form-group'>
+        <div class="form-group row">
+        <div className='form-group col-md-6'>
+        <label for='username' class="col-sm-2 col-form-label"> Username </label>
         <input type="text" className="form-control" id="name" name="name" value={name} placeholder="Enter name" onChange={onChange} />
         </div>
-        <div className='form-group'>
-        <input type="text" className="form-control" id="email" name="email" value={email} placeholder="Enter email" onChange={onChange} />
+        <div className='form-group col-md-6'>
+        <label for='username' class="col-sm-2 col-form-label"> Email </label>
+        <input type="email" className="form-control" id="email" name="email" value={email} placeholder="Enter email" onChange={onChange} />
         </div>
-        <div className='form-group'>
-        <input type="text" className="form-control" id="password" name="password" value={password} placeholder="Enter password" onChange={onChange} />
+        <div className='form-group col-md-6'>
+        <label for='username' class="col-sm-2 col-form-label"> Password </label>
+        <input type="password" className="form-control mb-2" id="password" name="password" value={password} placeholder="Enter password" onChange={onChange} />
         </div>
-        <div className='form-group'>
-        <input type="text" className="form-control" id="passwordconf" name="passwordconf" value={passwordconf} placeholder="Re-enter password" onChange={onChange} />
+        <div className='form-group col-md-6'>
+        <label for='username' class="col-sm-2 col-form-label"> Confirm Password </label>
+        <input type="password" className="form-control mb-2" id="passwordconf" name="passwordconf" value={passwordconf} placeholder="Re-enter password" onChange={onChange} />
+        </div>
+        <div className='form-group col-md-6'>
+          <button type="submit" className='btn btn-block'>
+            Submit
+          </button>
+        </div>
         </div>
       </form>
     </section>
