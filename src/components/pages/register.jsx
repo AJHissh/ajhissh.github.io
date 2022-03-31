@@ -13,7 +13,16 @@ function Register() {
 
   const {name, email, password, passwordconf} = formData
 
-  const onChange = () => {}
+  const onChange = (e) => {
+    SetFormData((prevState) => ({
+      ...prevState,
+      [e.target.name] : e.target.value,
+    }))
+  }
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+  }
 
   return <>
     <section className='heading'>
@@ -23,7 +32,7 @@ function Register() {
     </section>
     <section className='reg-form'>
     <p> Fill in information to create account</p>
-      <form>
+      <form onSubmit={onSubmit}>
         <div class="form-group row">
         <div className='form-group col-md-6'>
         <label for='username' class="col-sm-2 col-form-label"> Username </label>
@@ -43,7 +52,7 @@ function Register() {
         </div>
         <div className='form-group col-md-6'>
           <button type="submit" className='btn btn-block'>
-            Submit
+            Create your account
           </button>
         </div>
         </div>

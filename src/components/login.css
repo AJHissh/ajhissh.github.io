@@ -21,6 +21,12 @@
 
 h6 {
     text-align: center;
-    color: white;
+    color: blue;
     padding-top: 25px;
 }
+
+#btn2 {
+    margin-top: 10px;
+}
+
+
