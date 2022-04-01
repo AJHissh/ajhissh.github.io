@@ -4,9 +4,120 @@
     padding-bottom: 377px;
     position: relative;
     text-align: center;
+    
 }
 
 .forum-text {
     margin-top: 200px;
     position: relative;
+    
+}
+
+
+.heading-forum {
+    padding-top: 200px;
+    background-color: skyblue;
+    
+}
+
+
+
+
+
+
+  /* Nav Bar styles */
+.forum-nav{
+    display:flex;
+    align-items: center;
+    
+}
+
+.forum-cont > nav{
+    background-color: black;
+}
+
+
+.navigation{
+    background-color:#52057b;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+}
+
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
+
+}
+
+
+
+.nav-item a:hover{
+ 
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right:10px;
+    color: #fff;
+    cursor: pointer;
+ 
+}
+
+
+
+
+/*Navbar for the smartphones*/
+
+  /* Search Box styles */
+.search-box{
+    border: solid 1px blue;
+    margin-top: 80px;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    box-shadow:1px 2px 3px blue;
+
+}
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:blue;
+    color:#000000;
+}
+
+.search-box button:hover{
+    background-color: blue;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* search box for smrtphones */
+@media screen and (max-width: 460px){
+    .search-box input, .search-box button, .search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }    
+
+}
+
+.foot-forum {
+    text-align: center;
 }
