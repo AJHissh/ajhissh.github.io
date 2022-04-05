@@ -57,7 +57,7 @@
 
 
 .nav-item a:hover{
- 
+ display:flex;
 }
 
 .hide{
