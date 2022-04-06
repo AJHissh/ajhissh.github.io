@@ -1,6 +1,6 @@
 import React from "react";
-import Media2 from '../media2';
-import '../about.css';
+import Media2 from '../js/media2';
+import '../styles/about.css';
 
 
 const About = () => {

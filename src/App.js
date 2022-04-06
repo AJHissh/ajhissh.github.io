@@ -1,12 +1,15 @@
-import './App.css';
-import React from 'react';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/pages/home';
-import About from './components/pages/about';
-import Forum from './components/pages/forum';
-import Login from './components/pages/login';
-import Register from './components/pages/register';
+import './components/styles/App.css'
+import React from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Navbar from './components/js/Navbar'
+import Home from './components/pages/home'
+import About from './components/pages/about'
+import Forum from './components/pages/forum'
+import Login from './components/pages/login'
+import Register from './components/pages/register'
+
 
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
           <Route path='/register' element={<Register />} />
         </Routes> 
       </Router>
+      <ToastContainer />
       </>
     </div>
   );

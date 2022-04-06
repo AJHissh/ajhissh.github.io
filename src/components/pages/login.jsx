@@ -1,5 +1,5 @@
-import '../login.css';
-import {FcDownLeft, FcMultipleInputs, FcManager} from 'react-icons/fc';
+import '../styles/login.css';
+import {FcManager} from 'react-icons/fc';
 import {Link} from 'react-router-dom';
 import React from 'react'
 import {useState, useEffect} from 'react';

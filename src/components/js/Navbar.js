@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { Button } from './Button';
-import './Navbar.css'
+import '../styles/Navbar.css'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {FcGlobe} from "react-icons/fc";
 

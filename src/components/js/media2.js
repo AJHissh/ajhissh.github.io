@@ -1,8 +1,8 @@
 import React from "react";
 import {Button} from './Button'
-import '../App.css'
-import './media.css'
-import video from './vid2.mp4'
+import '../styles/App.css'
+import '../styles/media.css'
+import video from '../media/vid2.mp4'
 import { Link } from 'react-router-dom';
 
 function Media2() {

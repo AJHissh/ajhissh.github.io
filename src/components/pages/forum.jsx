@@ -1,5 +1,5 @@
 import React from "react";
-import '../forum.css';
+import '../styles/forum.css';
 
 
 const Forum = () => {
@@ -35,7 +35,7 @@ const Forum = () => {
     </header>
 
     <footer className="foot-forum">
-        <span>&copy;  xdasdasd </span>
+        <span>&copy;  drew hissh </span>
     </footer>
     </div>
     )

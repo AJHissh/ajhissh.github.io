@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../App.css'
-import Media from '../media'
-import Content from '../content';
+import '../styles/App.css'
+import Media from '../js/media'
+import Content from '../js/content';
 
 
 function Home() {
