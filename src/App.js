@@ -5,10 +5,11 @@ import 'react-toastify/dist/ReactToastify.css'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './components/js/Navbar'
 import Home from './components/pages/home'
-import About from './components/pages/about'
-import Forum from './components/pages/forum'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
+import Media2 from './components/js/media2'
+import About from './components/pages/about'
+import Forum from './components/pages/forum-main'
 
 
 

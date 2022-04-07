@@ -1,9 +1,10 @@
-.forum-main {
+.forum-cont {
     background-color: cornflowerblue;
-    padding-top: 150px;
-    padding-bottom: 377px;
     position: relative;
     text-align: center;
+    padding-top: 100px;
+    margin-bottom: -18px;
+    
     
 }
 
@@ -120,4 +121,6 @@
 
 .foot-forum {
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 260px;
 }

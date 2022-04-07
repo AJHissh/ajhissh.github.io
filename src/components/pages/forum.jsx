@@ -1,16 +1,15 @@
 import React from "react";
 import '../styles/forum.css';
+import "../styles/forum.css";
 
 
-const Forum = () => {
+const Testerforum = () => {
     return (
-    <div className="form-cont">
+    <div className="forum-cont">
     <section className='heading-forum'>
       <h1>
          Forum
       </h1>
-    </section>
-    <header>
         <div class="forum-nav">
             <nav class="navigation hide" id="navigation">
                 <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
@@ -32,14 +31,16 @@ const Forum = () => {
                 <button><i class="fa fa-search"></i></button>
             </div>
         </div>
-    </header>
+
 
     <footer className="foot-forum">
         <span>&copy;  drew hissh </span>
     </footer>
+    </section>
     </div>
+    
     )
 }
 
 
-export default Forum;
+export default Testerforum;

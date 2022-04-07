@@ -4,6 +4,7 @@ import '../styles/App.css'
 import '../styles/media.css'
 import video from '../media/vid2.mp4'
 import { Link } from 'react-router-dom';
+import Content from "./content";
 
 function Media2() {
     return (

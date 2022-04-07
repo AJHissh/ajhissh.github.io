@@ -32,5 +32,10 @@ h6 {
 
 .reg-form {
     overflow-x: hidden;
+    background-color: white;
+    margin-bottom: -17px;
 }
 
+.heading h1 {
+    text-align: center;
+}
