@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/AJHwebsite/static/css/main.409d853f.css",
-    "main.js": "/AJHwebsite/static/js/main.89a3aa3a.js",
-    "static/js/787.a86f3764.chunk.js": "/AJHwebsite/static/js/787.a86f3764.chunk.js",
-    "static/media/vid2.mp4": "/AJHwebsite/static/media/vid2.39e6c79bffb375ae929a.mp4",
-    "static/media/vid.mp4": "/AJHwebsite/static/media/vid.59e75226d30ad48f9ede.mp4",
-    "static/media/space.jpg": "/AJHwebsite/static/media/space.f045a1deb4d8386df2c4.jpg",
-    "static/media/milkyway.jpg": "/AJHwebsite/static/media/milkyway.a8e07c32a7422994c2ce.jpg",
-    "index.html": "/AJHwebsite/index.html",
-    "main.409d853f.css.map": "/AJHwebsite/static/css/main.409d853f.css.map",
-    "main.89a3aa3a.js.map": "/AJHwebsite/static/js/main.89a3aa3a.js.map",
-    "787.a86f3764.chunk.js.map": "/AJHwebsite/static/js/787.a86f3764.chunk.js.map"
+    "main.css": "/AJHissh/static/css/main.409d853f.css",
+    "main.js": "/AJHissh/static/js/main.d0b6926d.js",
+    "static/js/787.a86f3764.chunk.js": "/AJHissh/static/js/787.a86f3764.chunk.js",
+    "static/media/vid2.mp4": "/AJHissh/static/media/vid2.39e6c79bffb375ae929a.mp4",
+    "static/media/vid.mp4": "/AJHissh/static/media/vid.59e75226d30ad48f9ede.mp4",
+    "static/media/space.jpg": "/AJHissh/static/media/space.f045a1deb4d8386df2c4.jpg",
+    "static/media/milkyway.jpg": "/AJHissh/static/media/milkyway.a8e07c32a7422994c2ce.jpg",
+    "index.html": "/AJHissh/index.html",
+    "main.409d853f.css.map": "/AJHissh/static/css/main.409d853f.css.map",
+    "main.d0b6926d.js.map": "/AJHissh/static/js/main.d0b6926d.js.map",
+    "787.a86f3764.chunk.js.map": "/AJHissh/static/js/787.a86f3764.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.409d853f.css",
-    "static/js/main.89a3aa3a.js"
+    "static/js/main.d0b6926d.js"
   ]
 }
