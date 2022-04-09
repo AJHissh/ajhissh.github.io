@@ -11,7 +11,7 @@ function Media() {
             <video src={video} type="video/mp4" autoPlay loop muted></video>
             <div className="box-one">
             <Link to='/NFT' className='btn-mobile'>
-                <Button className='btns' buttonStyles='btn--outline' buttonSize='btn--large'> Mint            
+                <Button className='btns' buttonStyles='btn--outline' buttonSize='btn--large'> Contact Me            
                 </Button>
             </Link>
             <Link to='/About' className='btn-mobile'>
