@@ -2,6 +2,9 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const asyncHandler = require('express-async-handler')
 const User = require('../models/userModel')
+const { render } = require('@testing-library/react')
+const { faMessage } = require('@fortawesome/free-regular-svg-icons')
+const {toast} = require('react-toastify');
 
 
 // @desc Register new user
@@ -42,6 +45,9 @@ const registerUser = asyncHandler(async(req, res) => {
             email: user.email, 
             token: generateToken(user._id)   
         })
+        console.log(`user "${name}" with email "${email}" succesfully registered`.green.underline)
+        
+        
 
     } else {
         res.status(400)

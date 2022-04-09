@@ -9,6 +9,7 @@ import { FaUser } from 'react-icons/fa';
 import { register, reset, state } from '../../features/auth/authSlice';
 import Spinner from '../js/Spinner';
 
+
 function Register() {
   const [formData, SetFormData] = useState({
     name: '',
@@ -27,11 +28,13 @@ function Register() {
   useEffect(() => {
     if(isError) {
       toast.error(message)
+      toast("Something went wrong")
     }
     if(isSuccess || user ) {
       navigate('/register')
-    }
+      toast("Successfully Registered!")
     
+    }   
     dispatch(reset)
 
   }, [user, isError, isSuccess, message, navigate, dispatch])

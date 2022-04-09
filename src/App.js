@@ -7,7 +7,6 @@ import Navbar from './components/js/Navbar'
 import Home from './components/pages/home'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
-import Media2 from './components/js/media2'
 import About from './components/pages/about'
 import Forum from './components/pages/forum-main'
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Media2 from '../js/media2';
 import '../styles/about.css';
 
 
