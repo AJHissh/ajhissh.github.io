@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/AJHissh' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Forum' element={<Forum />} />
           <Route path='/login' element={<Login />} />
