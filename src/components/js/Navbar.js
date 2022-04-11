@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { Button } from './Button';
 import '../styles/Navbar.css'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {FcGlobe} from "react-icons/fc";
+import { useSelector, useDispatch } from 'react-redux';
+import {Logout, reset} from '../../features/auth/authSlice';
 
 
 function Navbar() {
@@ -11,6 +13,15 @@ function Navbar() {
     const {button, setButton} = useState(true)
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const {user} = useSelector((state) => state.auth)
+    const onLogout = () => {
+        dispatch(Logout())
+        dispatch(reset())
+        navigate('/')
+    }
 
     const showButton = () => {
         if(window.innerWidth <= 1250) {
@@ -49,13 +60,18 @@ function Navbar() {
                         Forum
                     </Link>
                 </li>
-                <li className='nav-item'>
-                    <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
-                        Login
-                    </Link>
-                </li>
+                {user ? <li className='logout-nav'>
+                  <button className='btnlogout' onClick={onLogout}>
+                      Logout
+                  </button>
+              </li> : <>
+                  <li className='login-nav'>
+                  <Link to='/login' onClick={closeMobileMenu}>
+                      Login
+                  </Link>
+              </li>
+                </>}
             </ul>
-            {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
             </div>
         </nav>
         </>
