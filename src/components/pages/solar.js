@@ -2,15 +2,12 @@ import React from "react";
 import '../styles/about.css';
 
 
+
+
 const Solar = () => {
     return (
       <div className="solar-whole">
         <body class="opening hide-UI view-2D zoom-large data-close controls-close" id="body-solar">
-          <div id="navbar">
-            <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
-            <h1>3D Solar System<span>by <a href="" target="_blank"></a></span></h1>
-            <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
-          </div>
           <div id="data">
             <a class="sun" title="sun" href="#sunspeed">Sun</a>
             <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
@@ -21,26 +18,6 @@ const Solar = () => {
             <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
             <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
             <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
-          </div>
-          <div id="controls">
-            <label class="set-view">
-              <input type="checkbox" />
-            </label>
-            <label class="set-zoom">
-              <input type="checkbox" />
-            </label>
-            <label>
-              <input type="radio" class="set-speed" name="scale" checked />
-              <span>Speed</span>
-            </label>
-            <label>
-              <input type="radio" class="set-size" name="scale" />
-              <span>Size</span>
-            </label>
-            <label>
-              <input type="radio" class="set-distance" name="scale" />
-              <span>Distance</span>
-            </label>
           </div>
           <div id="universe" class="scale-stretched">
             <div id="galaxy">

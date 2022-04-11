@@ -68,6 +68,9 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0"
   }
 }

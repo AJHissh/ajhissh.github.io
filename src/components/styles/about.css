@@ -1146,7 +1146,7 @@ dl.infos dd span:after {
 
 .solar-whole > .hide-UI h1,
 .hide-UI #data,
-.hide-UI dl.infos,
+/* .hide-UI dl.infos, */
 .hide-UI #controls {
   opacity: 0!important;
   margin-top: -30px; }
