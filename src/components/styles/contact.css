@@ -1,0 +1,30 @@
+.ContactContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.ContactForm {
+    background-color: #0f4539;
+    height: 100%;
+    padding-top: 280px;
+    padding-bottom: 210px;
+    margin-bottom: -17px;
+}
+
+.ContactForm h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: antiquewhite;
+    font-size: x-large;
+} 
+
+
+.ContactContainer .row  {
+   padding-top: 20px;
+}
+
+
+.ContactForm .submit-btn {
+    margin-top: 10px;
+   
+} 

@@ -9,6 +9,7 @@ import Login from './components/pages/login'
 import Register from './components/pages/register'
 import About from './components/pages/about'
 import Forum from './components/pages/forum-main'
+import ContactUs from './components/pages/contact'
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/Forum' element={<Forum />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/contact' element={<ContactUs />} />
         </Routes> 
       </Router>
       <ToastContainer />

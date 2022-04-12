@@ -11,20 +11,22 @@ const Content = () => (
             <div className="content_container">
                 <div className="content_wrapper">
                     <ul className="content_items">
-                    <Link to ={spaceimg}>
+                    {/* <Link to ={spaceimg}> */}
+                    <a href="https://www.linkedin.com/company/ajh-web-development">
                         <Items 
                         src={spaceimg}
-                        text="This is test picture of a random vector of space"
+                        text="Personal Logo"
                         label="universe"
-                        path= "/home" />
-                    </Link>
-                    <Link to ={milky}>
+                        path= "/home"/>
+                    </a>
+                    {/* </Link> */}
+                    {/* <Link to ={milky}>
                         <Items
                         src={milky}
                         text="This is a picture of the milkyway"
                         label="universe"
                         path= "/home" />                      
-                     </Link>                             
+                     </Link>                              */}
                     </ul>
                 </div>
 
