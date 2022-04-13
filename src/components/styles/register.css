@@ -4,11 +4,12 @@
     padding-right: 30px;
 }
 
-.heading {
-    padding-top: 200px;
+/* .heading {
+    padding-top: 10vh;
     background-color: #33ffba;
+    position: relative;
     
-}
+} */
 
 .reg-form > p {
     text-align: center;
@@ -19,9 +20,15 @@
     overflow: hidden;
     white-space: nowrap;
     display: block;
+    height: 100% !important;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+
 }
 
-@media only screen and (min-width: 600px) {
+
+/* @media only screen and (min-width: 600px) {
     .form-group {
         overflow: hidden;
         white-space: nowrap;
@@ -119,4 +126,10 @@
         margin-left: 205px;
         margin-top: 25px;
     }
-  } 
+  }  */
+
+  .top-nav-log {
+    padding-top: 15vh;
+    background-color: #33ffba;
+    position: relative;
+  }

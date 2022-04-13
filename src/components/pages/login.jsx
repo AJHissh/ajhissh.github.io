@@ -26,13 +26,13 @@ function Login() {
   }
 
   return <>
+    <div className='top-nav-log' />
+    <section className='reg-form'>
     <section className='heading'>
       <h1>
         <FcManager /> Login
       </h1>
     </section>
-    <section className='reg-form'>
-    <p> Login to your account </p>
       <form onSubmit={onSubmit}>
         <div class="form-group row">
         <div className='form-group col-md-6'>

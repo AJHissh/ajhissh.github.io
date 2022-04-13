@@ -12,12 +12,12 @@
 } */
 
 
-
+/* 
 .login-button {
 
     margin-top: 400px;
 
-}
+} */
 
 h6 {
     text-align: center;
@@ -34,6 +34,9 @@ h6 {
     overflow-x: hidden;
     background-color: white;
     margin-bottom: -17px;
+    height: 100vh !important;
+    width: 100%;
+    padding-top: 50px;
 }
 
 .heading h1 {

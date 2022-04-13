@@ -67,13 +67,13 @@ function Register() {
 
   return (
   <>
+    <div className='top-nav-log' />
+    <section className='reg-form'>
     <section className='heading'>
       <h1>
         <FcManager /> Register
       </h1>
     </section>
-    <section className='reg-form'>
-    <p> Fill in information to create account</p>
       <form onSubmit={onSubmit}>
         <div class="form-group row">
         <div className='form-group col-md-6'>
