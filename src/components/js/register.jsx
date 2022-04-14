@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 import {toast} from 'react-toastify';
 import { FaUser } from 'react-icons/fa';
 import { register, reset, state } from '../../features/auth/authSlice';
-import Spinner from './Spinner-global';
+import Loading from './Spinner-global';
 
 
 function Register() {
@@ -63,7 +63,7 @@ function Register() {
     }
 
     if(isLoading) {
-      return <Spinner />
+      return <Loading />
     }
 
   return (
