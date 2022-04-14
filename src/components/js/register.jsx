@@ -31,7 +31,7 @@ function Register() {
       toast("Something went wrong")
     }
     if(isSuccess || user ) {
-      navigate('/register')
+      navigate('/')
       toast("Successfully Registered!")
     
     }   

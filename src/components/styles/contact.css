@@ -8,13 +8,11 @@
     height: 100vh;
     width: 100%;
     padding-top: 280px;
-    padding-bottom: 210px;
     margin-bottom: -17px;
 }
 
 .ContactForm h1 {
     text-align: center;
-    padding-bottom: 20px;
     color: antiquewhite;
     font-size: x-large;
 } 

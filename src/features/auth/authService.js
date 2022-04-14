@@ -21,6 +21,8 @@ const logout = () => {
     // localStorage.removeItem('user')
 }
 
+
+
 const authService = {
     register,
     logout,

@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {FcGlobe} from "react-icons/fc";
 import { useSelector, useDispatch } from 'react-redux';
 import {Logout, reset} from '../../features/auth/authSlice';
+import {toast} from 'react-toastify';
 
 
 function Navbar() {
@@ -21,7 +22,11 @@ function Navbar() {
         dispatch(Logout())
         dispatch(reset())
         navigate('/')
+        toast("Logout Successful")
     }
+    
+ 
+
 
     const showButton = () => {
         if(window.innerWidth <= 1250) {
@@ -30,6 +35,7 @@ function Navbar() {
             setButton(true)
         }
     };
+
 
 
     window.addEventListener('resize', showButton);
@@ -61,7 +67,7 @@ function Navbar() {
                     </Link>
                 </li>
                 {user ? <li className='logout-nav'>
-                  <button className='btnlogout' onClick={onLogout}>
+                  <button className='btnlogout' id='logout' onClick={onLogout}>
                       Logout
                   </button>
               </li> : <>
