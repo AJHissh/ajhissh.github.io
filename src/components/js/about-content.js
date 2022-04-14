@@ -5,7 +5,7 @@ import spaceimg from "../media/space.jpg";
 import milky from "../media/milkyway.jpg";
 import {Link} from 'react-router-dom';
 
-const Content = () => (
+const AboutContent = () => (
         <div className="content">
             <h1>This website is being built with React!</h1>
             <div className="content_container">
@@ -33,4 +33,4 @@ const Content = () => (
             </div>
         </div>
 );
-export default Content;
+export default AboutContent;

@@ -4,7 +4,7 @@ import '../styles/about.css';
 
 
 
-const Solar = () => {
+const HomeSolar = () => {
     return (
       <div className="solar-whole">
         <body class="opening hide-UI view-2D zoom-large data-close controls-close" id="body-solar">
@@ -122,4 +122,4 @@ const Solar = () => {
           )
 }
 
-export default Solar;
+export default HomeSolar;

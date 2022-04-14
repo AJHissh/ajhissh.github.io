@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 import {toast} from 'react-toastify';
 import { FaUser } from 'react-icons/fa';
 import { register, reset, state } from '../../features/auth/authSlice';
-import Spinner from '../js/Spinner';
+import Spinner from './Spinner-global';
 
 
 function Register() {
@@ -104,4 +104,4 @@ function Register() {
   )
 }
 
-export default Register
+export default Register;

@@ -3,13 +3,14 @@ import React from 'react'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Navbar from './components/js/Navbar'
-import Home from './components/pages/home'
-import Login from './components/pages/login'
-import Register from './components/pages/register'
-import About from './components/pages/about'
-import Forum from './components/pages/forum-main'
-import ContactUs from './components/pages/contact'
+import Navbar from './components/js/Navbar-global'
+import AboutPage from './components/page-routes/about-route'
+import ForumPage from './components/page-routes/forum-route'
+import LoginPage from './components/page-routes/login-route'
+import RegisterPage from './components/page-routes/register-route'
+import ContactPage from './components/page-routes/contact-route'
+import HomePage from './components/page-routes/home-route'
+
 
 
 
@@ -20,12 +21,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Forum' element={<Forum />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/contact' element={<ContactUs />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/forum' element={<ForumPage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Routes> 
       </Router>
       <ToastContainer />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import { Button } from './Button';
+import { Button } from './Button-global';
 import '../styles/Navbar.css'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {FcGlobe} from "react-icons/fc";
@@ -51,12 +51,12 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                         About
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/Forum' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='/forum' className='nav-links' onClick={closeMobileMenu}>
                         Forum
                     </Link>
                 </li>

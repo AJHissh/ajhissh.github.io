@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/App.css'
-import Testerforum from "./forum"
+import Testerforum from "../js/forum"
 
-function Forum() {
+function ForumPage() {
     return (
         <>
         <Testerforum />
@@ -11,4 +11,4 @@ function Forum() {
 }
 
 
-export default Forum;
+export default ForumPage;

@@ -1,11 +1,11 @@
 import React from "react";
-import {Button} from './Button'
+import {Button} from './Button-global'
 import '../styles/App.css'
 import '../styles/media.css'
 import video from '../media/vid.mp4'
 import { Link } from 'react-router-dom';
 
-function Media() {
+function HomeMedia() {
     return (
         <div className='hero-container'>
             <video src={video} type="video/mp4" autoPlay loop muted></video>
@@ -23,4 +23,4 @@ function Media() {
     )
 }
 
-export default Media;
+export default HomeMedia;
