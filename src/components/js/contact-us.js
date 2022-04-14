@@ -13,7 +13,8 @@ const ContactUs = () => {
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUB_ID)
       .then((result) => {
           console.log(result.text)
-          toast("Message sent, Thank you!");
+          toast("Message sent, Thank you!", {
+            position: toast.POSITION.TOP_CENTER});
       }, (error) => {
           console.log(error.text);
       });

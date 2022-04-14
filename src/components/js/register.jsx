@@ -28,12 +28,13 @@ function Register() {
   useEffect(() => {
     if(isError) {
       toast.error(message)
-      toast("Something went wrong")
+      toast("Something went wrong" , {
+        position: toast.POSITION.TOP_CENTER})
     }
     if(isSuccess || user ) {
       navigate('/')
-      toast("Successfully Registered!")
-    
+      toast("Successfully Registered!" , {
+        position: toast.POSITION.TOP_CENTER})
     }   
     dispatch(reset)
 

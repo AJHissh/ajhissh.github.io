@@ -18,16 +18,14 @@ function Navbar() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const {user} = useSelector((state) => state.auth)
-    const onLogout = () => {
-        dispatch(Logout())
-        dispatch(reset())
-        navigate('/')
-        toast("Logout Successful")
-    }
+    const onLogout = () => { 
+            dispatch(Logout())
+            dispatch(reset())
+            navigate('/')
+            toast("Logout Successful" , {
+                position: toast.POSITION.TOP_CENTER})
+        }
     
- 
-
-
     const showButton = () => {
         if(window.innerWidth <= 1250) {
             setButton(false)
