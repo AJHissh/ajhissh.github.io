@@ -8,11 +8,11 @@ const Testerforum = () => {
     <div className="forum-cont">
     <section className='heading-forum'>
       <h1>
-         Forum
+         Welcome to the Forum
       </h1>
         <div class="forum-nav">
             <nav class="navigation hide" id="navigation">
-                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                {/* <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span> */}
                 <ul class="nav-list">
                     <li class="navfor-item"><a href="forums.html">Forums</a></li>
                     <li class="navfor-item"><a href="posts.html">Posts</a></li>

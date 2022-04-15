@@ -2,7 +2,7 @@
     background-color: cornflowerblue;
     position: relative;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10vh;
     margin-bottom: -18px;
     height: 100vh;
     width: 100%;
@@ -18,10 +18,22 @@
 
 
 .heading-forum {
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: skyblue;
-    height: 100vh;
+    height: 100%;
+    padding-top: 10vh;
+    
+}
 
+.heading-forum h1 {
+    padding-bottom: 5vh;
+
+
+    
+}
+
+
+.nav-list {
     
 }
 
@@ -42,21 +54,21 @@
 
 
 .navigation{
-    background-color:#52057b;
+    background-color:white;
     padding: 10px;
-    width: 65%;
-    display: inline-block;
-    border-radius: 5px;
-    max-height: 80px;
-    margin-right:10px;
+    width: 100%;
+    /* display: inline-block;
+    border-radius: 5px; */
+    /* max-height: 80px;
+    margin-right:10px; */
 }
 
-.close-icon i{
+/* .close-icon i{
     font-size:60px;
     float: left;
     cursor: pointer;
 
-}
+} */
 
 
 
@@ -64,9 +76,9 @@
  display:flex;
 }
 
-.hide{
+/* .hide{
     display: none;
-}
+} */
 
 .bar-icon{
     font-size: 60px;
@@ -84,11 +96,15 @@
 
   /* Search Box styles */
 .search-box{
-    border: solid 1px blue;
-    margin-top: 80px;
+    border: solid 1px black;
+    /* margin-top: 80px; */
     padding: 40px;
     display:flex;
     justify-content: center;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 5%;
     /* box-shadow:1px 2px 3px blue; */
 
 }
