@@ -10,11 +10,7 @@
     
 }
 
-.forum-text {
-    margin-top: 200px;
-    position: relative;
-    
-}
+
 
 
 .heading-forum {
@@ -94,15 +90,14 @@
 
   /* Search Box styles */
 .search-box{
-    border: solid 1px black;
-    /* margin-top: 80px; */
-    padding: 40px;
-    display:flex;
+    border: solid 0.5px black;
+    padding-top: 5vh;
+    display:block;
     justify-content: center;
     overflow: hidden;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-right: 5%;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    /* padding-right: 5%; */
     /* box-shadow:1px 2px 3px blue; */
 
 }
@@ -140,4 +135,8 @@
     text-align: center;
     padding-top: 15px;
     /* padding-bottom: 260px; */
+}
+
+.posts {
+    margin-top: 5vh;
 }

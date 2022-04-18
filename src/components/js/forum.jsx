@@ -1,14 +1,30 @@
 import React from "react";
 import '../styles/forum.css';
 import "../styles/forum.css";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
+import PostForm from "./postForm";
 
+const Testerforum = (props) => {
 
-const Testerforum = () => {
+    const navigate = useNavigate()
+
+    const {user} = useSelector((state) => state.auth)
+    useEffect(() => {
+        if(!user) {
+            navigate('/login')
+            toast('Login required to view forum', {
+                position: toast.POSITION.TOP_CENTER})
+        }
+    }, [user, navigate])
+
     return (
     <div className="forum-cont">
     <section className='heading-forum'>
       <h1>
-         Welcome to the Forum
+         Welcome to the Forum, {user.name}!
       </h1>
         <div class="forum-nav">
             <nav class="navigation hide" id="navigation">
@@ -30,7 +46,13 @@ const Testerforum = () => {
                 <input type="text" name="q" placeholder="search ..."/>
                 <button><i class="fa fa-search"></i></button>
             </div>
+            <div className="test-1"></div>
+            <div className="posts">
+            <PostForm />
+            </div>
+            
         </div>
+        
 
 
     <footer className="foot-forum">

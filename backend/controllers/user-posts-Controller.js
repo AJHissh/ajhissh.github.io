@@ -1,8 +1,8 @@
 const asyncHandler = require('express-async-handler')
 const Posts = require('../models/user-posts-model')
-const User = require('../models/userModel')
+// const User = require('../models/userModel')
 // @desc Get Posts
-// @route GET /api/posts
+// @route GET /api/user-posts
 // @access Private
 
 const getPosts = asyncHandler(async (req, res) => {
@@ -12,7 +12,7 @@ const getPosts = asyncHandler(async (req, res) => {
 })
 
 // @desc Write Posts
-// @route GET /api/posts
+// @route GET /api/user-posts
 // @access Private
 
 const setPosts = asyncHandler(async (req, res) => {
@@ -23,14 +23,14 @@ const setPosts = asyncHandler(async (req, res) => {
 
     const posts = await Posts.create({
         text: req.body.text,
-        user: req.user.id
-    })
-
+        user: req.user.id,  
+    } ) 
+    console.log(posts)
     res.status(200).json(posts)
 })
 
 // @desc Update Posts
-// @route GET /api/posts/:id
+// @route GET /api/user-posts/:id
 // @access Private
 
 const updatePosts = asyncHandler(async (req, res) => {
@@ -41,16 +41,16 @@ const updatePosts = asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error('Post not found')
     }
-    const user = await User.findById(req.user.id)
+    
 
     // checks for user
-    if (!user) {
+    if (!req.user) {
         res.status(401)
         throw new Error('User not found')
     }
     // Matches user with user who posted 
 
-    if (posts.user.toString() !== user.id) {
+    if (posts.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authenticated')
     }
@@ -76,13 +76,12 @@ const deletePosts = asyncHandler(async (req, res) => {
         throw new Error('Post does not exist')
     }
 // checks for user
-    const user = await User.findById(req.user.id)
-    if (!user) {
+    if (!req.user) {
         res.status(401)
         throw new Error('User not found')
     }
 // Matches user with user who posted 
-    if (posts.user.toString() !== user.id) {
+    if (posts.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error(`${global.user}, ${user.id}`)
             

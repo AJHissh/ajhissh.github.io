@@ -84,7 +84,7 @@ function Login() {
         <label for='username' class="col-sm-2 col-form-label"> Confirm Password </label>
         <input type="password" className="form-control mb-2" id="passwordconf" name="passwordconf" value={passwordconf} placeholder="Re-enter password" onChange={onChange} />
         </div>
-        <div className='form-group col-md-6'>
+        <div className='form-group col-md-6'>  
           <button type="submit" className='btn btn-block' id="btn1">
             Login
           </button>
