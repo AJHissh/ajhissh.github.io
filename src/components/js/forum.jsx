@@ -9,9 +9,9 @@ import PostForm from "./postForm";
 
 const Testerforum = () => {
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
-    // const {user} = useSelector((state) => state.auth)
+    const {user} = useSelector((state) => state.auth)
     // const LogRedir = () => {
     //     if(!user) {
     //         navigate('/login');
