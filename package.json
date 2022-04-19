@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8000",
-  "homepage": "https://ajhissh.github.io/",
+  "homepage": "https://ajh-website.herokuapp.com/",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
