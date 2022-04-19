@@ -1,5 +1,8 @@
+import { useSelector } from "react-redux";
+const {user} = useSelector((state) => state.auth)
+
 function requireAuth(nextState, replace, next) {
-    if (!authenticated) {
+    if (!user) {
       replace({
         pathname: "/login",
         state: {nextPathname: nextState.location.pathname}
