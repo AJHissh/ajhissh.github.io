@@ -19,6 +19,7 @@ app.use('/api/users', require('./routes/userRoutes'))
 
 if (process.env.NODE_ENV == "production") {
     app.use(express.static("/app/build"));
+    app.use(express.static("/app/src/components"));
 
     app.get("*", (req, res) => {
         res.sendFile("/app/build/index.html");
