@@ -25,7 +25,9 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
+          <RequireAuth>
           <Route path='/forum' element={<ForumPage />} />
+          </RequireAuth>
           <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/contact' element={<ContactPage />} />
