@@ -12,13 +12,13 @@ const Testerforum = () => {
     const navigate = useNavigate()
 
     const {user} = useSelector((state) => state.auth)
-    useEffect(() => {
+    const LogRedir = () => {
         if(!user) {
             navigate('/login');
             toast('Login required to view forum', {
                 position: toast.POSITION.TOP_CENTER})
         }
-    }, [user, navigate])
+    }
             
     return (
     <div className="forum-cont">
