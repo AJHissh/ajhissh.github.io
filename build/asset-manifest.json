@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a619c05.css",
+    "main.js": "/static/js/main.cfc10109.js",
+    "static/js/787.a86f3764.chunk.js": "/static/js/787.a86f3764.chunk.js",
+    "static/media/vid2.mp4": "/static/media/vid2.39e6c79bffb375ae929a.mp4",
+    "static/media/vid.mp4": "/static/media/vid.59e75226d30ad48f9ede.mp4",
+    "static/media/milkyway.jpg": "/static/media/milkyway.a8e07c32a7422994c2ce.jpg",
+    "static/media/space.jpg": "/static/media/space.0b7063b149fdb7e5071e.jpg",
+    "index.html": "/index.html",
+    "main.7a619c05.css.map": "/static/css/main.7a619c05.css.map",
+    "main.cfc10109.js.map": "/static/js/main.cfc10109.js.map",
+    "787.a86f3764.chunk.js.map": "/static/js/787.a86f3764.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a619c05.css",
+    "static/js/main.cfc10109.js"
+  ]
+}
