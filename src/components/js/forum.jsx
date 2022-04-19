@@ -12,13 +12,13 @@ const Testerforum = (props) => {
     const navigate = useNavigate()
 
     const {user} = useSelector((state) => state.auth)
-    // useEffect(() => {
+    useEffect(() => {
         if(!user) {
-            navigate('https://ajh-website.herokuapp.com/login', {replace:true});
+            window.location.replace("https://ajh-website.herokuapp.com/login");
             toast('Login required to view forum', {
                 position: toast.POSITION.TOP_CENTER})
         }
-    // }, [user, navigate])
+    }, [user, navigate])
             
     return (
     <div className="forum-cont">
