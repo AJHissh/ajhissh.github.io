@@ -2,6 +2,7 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "homepage": "https://ajhissh.github.io/",
   "dependencies": {
     "-": "^0.0.1",
@@ -43,7 +44,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"node backend/server.js\"",
+    "start": "node server.js",
     "dev": "react-scripts start",
     "server": "nodemon backend/server.js",
     "build": "react-scripts build",
