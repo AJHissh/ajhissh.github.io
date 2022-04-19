@@ -2,8 +2,8 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
   "homepage": "https://ajh-website.herokuapp.com/",
+  "proxy": "https://localhost:5000/",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
@@ -52,7 +52,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "client": "concurrently --kill-others \"npm run dev\" \"npm run server\"",
+    "client": "concurrently --kill-others \"npm run start\" \"npm run server\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm install concurrently && npm run build"
   },
   "eslintConfig": {

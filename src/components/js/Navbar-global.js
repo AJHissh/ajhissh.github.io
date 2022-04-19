@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import { Button } from './Button-global';
+// import { Button } from './Button-global';
 import '../styles/Navbar.css'
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {FcGlobe} from "react-icons/fc";
+// import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import {FcGlobe} from "react-icons/fc";
 import { useSelector, useDispatch } from 'react-redux';
 import {Logout, reset} from '../../features/auth/authSlice';
 import {toast} from 'react-toastify';
+
 
 
 function Navbar() {
@@ -25,6 +26,7 @@ function Navbar() {
             toast("Logout Successful" , {
                 position: toast.POSITION.TOP_CENTER})
         }
+
     
     const showButton = () => {
         if(window.innerWidth <= 1250) {
@@ -33,6 +35,15 @@ function Navbar() {
             setButton(true)
         }
     };
+
+    const onForum = () => {
+        if (!user) {
+            navigate('./login')
+            window.location.reload(true);
+            toast('Login required to view forum', {
+                position: toast.POSITION.TOP_CENTER})
+        }}
+   
 
 
 
@@ -43,7 +54,7 @@ function Navbar() {
         <nav className = 'navbar'>
             <div className='navbar-container'>
                 <Link to='/' className='navbar-logo'>
-                <FcGlobe/> <i class="fw fw-fw">  Andrew Hisshion</i> 
+                <i class="fw fw-fw">  Andrew Hisshion</i> 
                 </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -60,7 +71,7 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/forum' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='/forum' className='nav-links' onClick={onForum}>
                         Forum
                     </Link>
                 </li>

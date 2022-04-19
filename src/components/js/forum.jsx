@@ -2,25 +2,26 @@ import React from "react";
 import '../styles/forum.css';
 import "../styles/forum.css";
 import { useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import PostForm from "./postForm";
-const jwt = require('jsonwebtoken')
 
-const Testerforum = () => {
 
-    const navigate = useNavigate()
+function Testerforum() {
+
+    // const navigate = useNavigate()
 
     const {user} = useSelector((state) => state.auth)
-    useEffect(() => {
-        if(!user && !jwt) {
-            navigate('/login');
-            toast('Login required to view forum', {
-                position: toast.POSITION.TOP_CENTER})
-        }
-    }, [user, navigate])
-            
+
+    // useEffect(() => {
+    //     if (!user) {
+    //         navigate('/login')
+    //         toast('Login required to view forum', {
+    //             position: toast.POSITION.TOP_CENTER})
+    //     }
+    // }, [user, navigate]) 
+    
     return (
     <div className="forum-cont">
     <section className='heading-forum'>
