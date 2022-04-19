@@ -9,16 +9,16 @@ import PostForm from "./postForm";
 
 const Testerforum = () => {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
-    const {user} = useSelector((state) => state.auth)
-    const LogRedir = () => {
-        if(!user) {
-            navigate('/login');
-            toast('Login required to view forum', {
-                position: toast.POSITION.TOP_CENTER})
-        }
-    }
+    // const {user} = useSelector((state) => state.auth)
+    // const LogRedir = () => {
+    //     if(!user) {
+    //         navigate('/login');
+    //         toast('Login required to view forum', {
+    //             position: toast.POSITION.TOP_CENTER})
+    //     }
+    // }
             
     return (
     <div className="forum-cont">
