@@ -92,8 +92,7 @@ function Login() {
           <button type="submit" className='btn btn-block' id="btn2">
             Register
           </button>
-          </Link>
-            <h6>" Not functional when viewing from GitHub Pages "</h6>       
+          </Link>    
         </div>
         </div>
       </form>
