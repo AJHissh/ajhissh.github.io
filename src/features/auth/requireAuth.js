@@ -1,14 +1,16 @@
 import { useSelector } from "react-redux";
 import { Navigate, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
-const {user} = useSelector((state) => state.auth)
-const navigate = useNavigate()
+
 
 function requireAuth() {
-        if(!user) {
-            navigate('/login');
-            toast('Login required to view forum', {
-                position: toast.POSITION.TOP_CENTER})
+    const navigate = useNavigate()
+    const {user} = useSelector((state) => state.auth)
+    if(!user) {
+        navigate('/login');
+        toast('Login required to view forum', {
+            position: toast.POSITION.TOP_CENTER})
         
     }
   }
