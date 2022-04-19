@@ -43,14 +43,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "nodemon backend/server.js",
+    "static": "react-scripts start",
     "server": "nodemon backend/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "client": "concurrently --kill-others \"npm run start\" \"npm run server\"",
+    "start": "concurrently --kill-others \"npm run static\" \"npm run server\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm run build"
   },
   "eslintConfig": {
@@ -59,9 +59,6 @@
       "react-app/jest"
     ]
   },
-  "engines": {
-    "node": "16.13.2"
-    },
   "browserslist": {
     "production": [
       ">0.2%",
