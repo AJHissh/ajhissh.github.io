@@ -2,19 +2,19 @@ import React from "react";
 import '../styles/forum.css';
 import "../styles/forum.css";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import PostForm from "./postForm";
 
-const Testerforum = (props) => {
+const Testerforum = () => {
 
     const navigate = useNavigate()
 
     const {user} = useSelector((state) => state.auth)
     useEffect(() => {
         if(!user) {
-            window.location.replace("https://ajh-website.herokuapp.com/login");
+            Navigate('/login');
             toast('Login required to view forum', {
                 position: toast.POSITION.TOP_CENTER})
         }
