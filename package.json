@@ -43,7 +43,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"nodemon backend/server.js\"",
     "server": "nodemon backend/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,7 +51,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "client": "concurrently --kill-others \"npm run start\" \"npm run server\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm install concurrently && npm run build"
   },
   "eslintConfig": {
     "extends": [
