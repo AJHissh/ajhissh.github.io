@@ -44,13 +44,14 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"node backend/server.js\"",
+    "dev": "react-scripts start",
     "server": "nodemon backend/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "client": "concurrently --kill-others \"npm run start\" \"npm run server\"",
+    "client": "concurrently --kill-others \"npm run dev\" \"npm run server\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm install concurrently && npm run build"
   },
   "eslintConfig": {
