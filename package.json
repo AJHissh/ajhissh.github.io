@@ -2,7 +2,7 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ajh-website.herokuapp.com/",
+  "homepage": "https://ajhissh.github.io/",
   "proxy": "https://localhost:5000/",
   "dependencies": {
     "-": "^0.0.1",
