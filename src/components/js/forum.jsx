@@ -14,7 +14,7 @@ const Testerforum = () => {
     const {user} = useSelector((state) => state.auth)
     useEffect(() => {
         if(!user) {
-            Navigate('/login');
+            navigate('/login');
             toast('Login required to view forum', {
                 position: toast.POSITION.TOP_CENTER})
         }

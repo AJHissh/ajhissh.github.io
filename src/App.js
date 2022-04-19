@@ -11,6 +11,7 @@ import RegisterPage from './components/page-routes/register-route'
 import ContactPage from './components/page-routes/contact-route'
 import HomePage from './components/page-routes/home-route'
 import Loading from './components/js/Spinner-global'
+import requireAuth from './features/auth/requireAuth'
 
 
 
@@ -24,7 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/forum' element={<ForumPage />} />
+          <Route path='/forum' element={<ForumPage />} onEnter={requireAuth} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/contact' element={<ContactPage />} />
