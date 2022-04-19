@@ -27,8 +27,7 @@ function Register() {
 
   useEffect(() => {
     if(isError) {
-      toast.error(message)
-      toast("Something went wrong" , {
+      toast.error(message, {
         position: toast.POSITION.TOP_CENTER})
     }
     if(isSuccess || user ) {
