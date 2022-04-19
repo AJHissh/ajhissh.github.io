@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 
-function requireAuth() {
+function RequireAuth() {
     const navigate = useNavigate()
     const {user} = useSelector((state) => state.auth)
     if(!user) {
@@ -15,4 +15,4 @@ function requireAuth() {
     }
   }
 
-  export default requireAuth;
+  export default RequireAuth;
