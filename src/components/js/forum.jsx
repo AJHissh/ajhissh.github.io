@@ -6,6 +6,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import PostForm from "./postForm";
+const jwt = require('jsonwebtoken')
 
 const Testerforum = () => {
 
@@ -13,7 +14,7 @@ const Testerforum = () => {
 
     const {user} = useSelector((state) => state.auth)
     useEffect(() => {
-        if(!user) {
+        if(!user && !jwt) {
             navigate('/login');
             toast('Login required to view forum', {
                 position: toast.POSITION.TOP_CENTER})
