@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import PostForm from "./postForm";
-import { Redirect, Route } from 'react-router-dom'
 
 const Testerforum = (props) => {
 
@@ -15,8 +14,7 @@ const Testerforum = (props) => {
     const {user} = useSelector((state) => state.auth)
     useEffect(() => {
         if(!user) {
-            // navigate('/login', {replace:true});
-            <Redirect to= {{pathname: '/login'}} />
+            navigate('https://ajh-website.herokuapp.com/login', {replace:true});
             toast('Login required to view forum', {
                 position: toast.POSITION.TOP_CENTER})
         }
