@@ -40,10 +40,12 @@ function Navbar() {
         if (!user) {
             navigate('./login')
             window.location.reload(true);
-            toast('Login required to view forum', {
-                position: toast.POSITION.TOP_CENTER})
+            alert("You must login to view forum")
+            // toast('Login required to view forum', {
+            //     position: toast.POSITION.TOP_CENTER})
         }}
-   
+
+
 
 
 
@@ -71,12 +73,18 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/forum' className='nav-links' onClick={onForum}>
+                    <Link to='/forum' className='nav-links' onClick={()=> {                  
+                        onForum();
+                        closeMobileMenu();
+                    }}>
                         Forum
                     </Link>
                 </li>
                 {user ? <li className='logout-nav'>
-                  <button className='btnlogout' id='logout' onClick={onLogout}>
+                  <button className='btnlogout' id='logout' onClick={()=>{
+                      onLogout();
+                      closeMobileMenu();
+                  }}>
                       Logout
                   </button>
               </li> : <>

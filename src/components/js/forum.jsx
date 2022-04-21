@@ -48,13 +48,8 @@ function Testerforum() {
                 <input type="text" name="q" placeholder="search ..."/>
                 <button><i class="fa fa-search"></i></button>
             </div>
-            <div className="test-1"></div>
-            <div className="posts">
-            <PostForm />
-            </div>
-            
+            <div><PostForm /> </div>
         </div>
-        
 
 
     <footer className="foot-forum">

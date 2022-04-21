@@ -18,6 +18,7 @@
     background-color: skyblue;
     height: 100%;
     padding-top: 10vh;
+    /* margin-bottom: -10px; */
     
 }
 
@@ -90,7 +91,7 @@
 
   /* Search Box styles */
 .search-box{
-    border: solid 0.5px black;
+    /* border: solid 0.5px black; */
     padding-top: 5vh;
     display:block;
     justify-content: center;
@@ -108,35 +109,31 @@
 
 .search-box input{
     padding: 10px;
+    
 }
 
 .search-box button{
     padding: 10px;
     background-color:green;
     color:#000000;
+    
 }
 
 .search-box button:hover{
-    background-color: blue;
+    background-color: green;
     color: #fff;
     box-shadow: 1px 2px 3px #fff;
+    
 }
 
-/* search box for smrtphones */
-@media screen and (max-width: 460px){
-    .search-box input, .search-box button, .search-box select{
-        min-width: 300px;
-        margin-top: 5px;
-    }    
-
-}
 
 .foot-forum {
     text-align: center;
-    padding-top: 15px;
+    margin-top: 3vh;
     /* padding-bottom: 260px; */
-}
+} 
 
 .posts {
     margin-top: 5vh;
+    
 }

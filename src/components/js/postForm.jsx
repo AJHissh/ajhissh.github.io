@@ -22,14 +22,14 @@ function PostForm(props) {
   return (
     <section className='postform'>
         <form onSubmit={onSubmit}>
-          <div className='form-group'>
-            <input type='text' name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} required />
+          <div className='form-g'>
+            <input type='text' name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} placeholder='Enter text' required />
           </div>
-          <div className='form-group'>
+          <div className='form-g'>
             <button className='btn-post' type='submit'> Submit Post </button>
           </div>
+          <ShowPosts text={post} />
         </form>
-        <div><ShowPosts text={post} /></div>
     </section>
   )
 }

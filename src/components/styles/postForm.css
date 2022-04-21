@@ -3,3 +3,21 @@
     text-align: center;
   
 }
+
+/* .postform {
+    height: 100%;
+} */
+
+/* .showposts {
+    margin-bottom: -10vh;
+} */
+
+#text {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display:inline-block;
+}
+
+.btn-post {
+    margin-bottom: 3vh;
+}
