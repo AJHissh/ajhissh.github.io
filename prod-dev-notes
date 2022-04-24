@@ -12,6 +12,12 @@ FOR PRODUCTION
 
 4. CHANGE NODE_ENV to production 
 
+ PUSH TO HEROKU
+
+    git add .
+    git commit -am "message"
+    git push heroku master
+
 
 
 FOR DEVELOPMENT

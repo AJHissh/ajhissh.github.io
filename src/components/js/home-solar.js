@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/about.css';
+import '../styles/solar-about.css';
 
 
 
@@ -7,7 +7,7 @@ import '../styles/about.css';
 const HomeSolar = () => {
     return (
       <div className="solar-whole">
-        <body class="opening hide-UI view-2D zoom-large data-close controls-close" id="body-solar">
+        <body class="opening hide-UI view-3D zoom-large data-close controls-open" id="body-solar">
           <div id="data">
             <a class="sun" title="sun" href="#sunspeed">Sun</a>
             <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>

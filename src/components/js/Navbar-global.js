@@ -10,6 +10,7 @@ import {toast} from 'react-toastify';
 
 
 
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const {button, setButton} = useState(true)
@@ -27,7 +28,7 @@ function Navbar() {
                 position: toast.POSITION.TOP_CENTER})
         }
 
-    
+
     const showButton = () => {
         if(window.innerWidth <= 1250) {
             setButton(false)
@@ -37,15 +38,14 @@ function Navbar() {
     };
 
     const onForum = () => {
+
         if (!user) {
-            navigate('./login')
+            navigate('/login')
             window.location.reload(true);
             alert("You must login to view forum")
             // toast('Login required to view forum', {
             //     position: toast.POSITION.TOP_CENTER})
         }}
-
-
 
 
 

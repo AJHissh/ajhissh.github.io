@@ -33,7 +33,7 @@ function Login() {
     }
     if(isSuccess || user ) {
       navigate('/')
-      toast("Successfully Login!" , {
+      toast("Successfully Logged in!" , {
         position: toast.POSITION.TOP_CENTER})
     }   
     dispatch(reset)
