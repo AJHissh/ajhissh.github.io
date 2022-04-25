@@ -1,6 +1,5 @@
 import React from "react";
 import '../styles/forum.css';
-import "../styles/forum.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";

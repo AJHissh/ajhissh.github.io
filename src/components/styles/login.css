@@ -37,7 +37,8 @@ h6 {
     height: 100vh !important;
     width: 100%;
     padding-top: 50px;
-}
+    font-family: 'Courier New', monospace;
+} 
 
 .heading h1 {
     text-align: center;

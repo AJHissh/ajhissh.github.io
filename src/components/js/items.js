@@ -8,9 +8,9 @@ function Items(props) {
             <figure className="content_item_link">
                 <img src={props.src} alt="cont" className="content_item_img" id={props.id} />
             </figure>           
-            <div className="content_item_info">
+            {/* <div className="content_item_info">
                 <h5 className="content_item_text">{props.text}</h5>
-            </div>      
+            </div>       */}
         </li>
         </>
     )

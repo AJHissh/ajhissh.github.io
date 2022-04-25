@@ -6,8 +6,9 @@ import '../styles/about.css';
 
 const HomeSolar = () => {
     return (
-      <div className="solar-whole">
+      <div className="solar-whole"> 
         <body class="opening hide-UI view-3D zoom-large data-close controls-open" id="body-solar">
+        <p> Our solar system</p>
           <div id="data">
             <a class="sun" title="sun" href="#sunspeed">Sun</a>
             <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
@@ -19,7 +20,7 @@ const HomeSolar = () => {
             <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
             <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
           </div>
-          <div id="universe" class="scale-stretched">
+          <div id="universe" class="scale-stretched">  
             <div id="galaxy">
               <div id="solar-system" class="earth">
                 <div id="mercury" class="orbit">

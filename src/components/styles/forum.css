@@ -24,6 +24,7 @@
 
 .heading-forum h1 {
     padding-bottom: 5vh;
+    font-family: 'Courier New', monospace;
 
 
     
@@ -45,6 +46,7 @@
 
 .forum-cont > nav{
     background-color: black;
+    
 }
 
 
@@ -52,6 +54,7 @@
     background-color:white;
     padding: 10px;
     width: 100%;
+    font-family: 'Courier New', monospace;
     /* display: inline-block;
     border-radius: 5px; */
     /* max-height: 80px;
@@ -96,6 +99,7 @@
     display:block;
     justify-content: center;
     overflow: hidden;
+    font-family: 'Courier New', monospace;
     /* margin-left: 5px;
     margin-right: 5px; */
     /* padding-right: 5%; */
@@ -129,7 +133,10 @@
 
 .foot-forum {
     text-align: center;
-    margin-top: 3vh;
+    font-family: 'Courier New', monospace;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
     /* padding-bottom: 260px; */
 } 
 
@@ -137,3 +144,10 @@
     margin-top: 5vh;
     
 }
+
+div.absolute {
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    border: 3px solid #8AC007;
+  }
