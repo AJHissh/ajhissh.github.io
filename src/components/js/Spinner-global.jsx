@@ -2,10 +2,8 @@ import "../styles/spinner.css"
 
 function Loading() {
     return (
-        <div className="loadingSpinnerContainer">
-            <div>
-            <div className="loadingSpinner"></div>
-            </div>
+        <div className="fa-3x">
+            <i className="fa-solid fa-spinner fa-spin-pulse"></i>
         </div>
     )
 }

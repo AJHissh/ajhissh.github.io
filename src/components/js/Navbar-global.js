@@ -81,7 +81,7 @@ function Navbar() {
                     </Link>
                 </li>
                 {user ? <li className='logout-nav'>
-                  <button className='btnlogout' id='logout' onClick={()=>{
+                  <button className='btn btn-primary' id='logout' onClick={()=>{
                       onLogout();
                       closeMobileMenu();
                   }}>
@@ -89,7 +89,7 @@ function Navbar() {
                   </button>
               </li> : <>
                   <li className='login-nav'>
-                  <Link to='/login' onClick={closeMobileMenu}>
+                  <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
                       Login
                   </Link>
               </li>

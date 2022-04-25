@@ -1155,7 +1155,10 @@ dl.infos dd span:after {
   margin-bottom: -30px; }
 
 .hide-UI .orbit {
-  border: 1px solid rgba(255, 255, 255, 0.2) !important; }
+  border: 1px solid lightcyan !important;
+  opacity: inherit;   
+}
+  
 
 .solar-whole > h1 {
   width: 100%;
@@ -1411,6 +1414,7 @@ dl.infos dd span:after {
 
 #universe   {
   background-color: black;
+  background-image: url("../media/spacebackground5.jpg");
 }
 
 
