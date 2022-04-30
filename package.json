@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ajh-website.herokuapp.com/",
-  "proxy": "https://localhost:5000",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
@@ -44,7 +43,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "react-scripts start",
     "start-dev-change-start-above-to-this-on-production-use-node-backend/server.js": "react-scripts start",
     "server": "nodemon backend/server.js",
     "build": "react-scripts build",
