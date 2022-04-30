@@ -2,24 +2,55 @@ import React from "react";
 import '../styles/forum.css';
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { toast } from "react-toastify";
+import Loading from "./Spinner-global";
 import PostForm from "./postForm";
+import {useState} from 'react';
+import { getPosts, reset } from "../../features/posts/postSlice"
+import { createPost } from '../../features/posts/postSlice';
 
 
 function Testerforum() {
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const {user} = useSelector((state) => state.auth)
+    const {posts, isLoading, isError, message} = useSelector((state) => state.posts)
 
-    // useEffect(() => {
-    //     if (!user) {
-    //         navigate('/login')
-    //         toast('Login required to view forum', {
-    //             position: toast.POSITION.TOP_CENTER})
-    //     }
-    // }, [user, navigate]) 
+    const [text, setText] = useState('')
+    const post = [text]
+    const onSubmit = (e) => {
+      e.preventDefault()
+      dispatch(createPost({text}))
+      toast(`Thank you for posting, ${user.name}!`)
+      setText('')
+    }
+
+    useEffect(() => {
+        if (isError) {
+            console.log(message)
+        }
+
+        
+
+        // if (!user) {
+        //     navigate('/login')
+        //     toast('Login required to view forum', {
+        //         position: toast.POSITION.TOP_CENTER})
+        // }
+
+        dispatch(getPosts())
+
+        return () => {
+            dispatch(reset())
+        }
+    }, [user, navigate, isError, message, dispatch])
+    
+    if (isLoading){
+        return <Loading />
+    }
     
     return (
     <div className="forum-cont">
@@ -47,13 +78,29 @@ function Testerforum() {
                 <input type="text" name="q" placeholder="search ..."/>
                 <button><i class="fa fa-search"></i></button>
             </div>
-            <div><PostForm /> </div>
+            <section className="post-content">
+            {post.length > 0 ? (
+                <div className="posts">
+                    {posts?.map((post) => (<PostForm key={post._id} post={post}  />))}
+                </div>
+            ) : (<h3> You have not made any posts </h3>)}
+
+        </section>
         </div>
+        <section className='postform'>
+        <form onSubmit={onSubmit}>
+          <div className='form-g'>
+            <input type='text' name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} placeholder='Enter text' required />
+          </div>
+          <div className='form-g'>
+            <button className='btn-post' type='submit'> Submit Post </button>
+          </div>
+        </form>
+        </section>
 
-
-    <footer className="foot-forum">
+    {/* <footer className="foot-forum">
         <span>&copy;  drew hissh </span>
-    </footer>
+    </footer> */}
     </section>
     </div>
     

@@ -21,3 +21,13 @@
 .btn-post {
     margin-bottom: 3vh;
 }
+
+td, th {
+  
+    text-align: center;
+    vertical-align: middle;
+    white-space: auto;
+    width: 20%!important;
+    overflow-x: auto;
+    padding: 5vh;
+}
