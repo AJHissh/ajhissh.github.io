@@ -81,7 +81,7 @@ function Testerforum() {
             <section className="post-content">
             {post.length > 0 ? (
                 <div className="posts">
-                    {posts?.map((post) => (<PostForm key={post._id} post={post}  />))}
+                    {posts?.map((post) => (<PostForm key={post._id} post={post} user={user.name}  />))}
                 </div>
             ) : (<h3> You have not made any posts </h3>)}
 

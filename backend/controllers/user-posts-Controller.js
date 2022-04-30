@@ -7,7 +7,7 @@ const Posts = require('../models/user-posts-model')
 
 const getPosts = asyncHandler(async (req, res) => {
 
-    const posts = await Posts.find({user: req.user.id})
+    const posts = await Posts.find({posts: req.user.posts})
     res.status(200).json(posts)
 })
 
