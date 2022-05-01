@@ -6,8 +6,8 @@ import '../styles/postForm.css'
 function PostForm({post, user}) {
 
   return (
-    <div className='post'>
-      <table className='table table-striped'>
+    <div className='table-responsive '>
+      <table className='table table-striped table-hover'>
       <thead>
         <tr>
           <th scope='col'>Message</th>

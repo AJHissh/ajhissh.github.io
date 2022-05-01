@@ -170,7 +170,7 @@
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 480px) {
     .NavbarItems {
       position: relative;
     }
@@ -181,7 +181,7 @@
       left: 0; */
       transform: translate(25%, 50%);
       font-size: 25px;
-      padding-top: 7px;
+      padding-top: 1vh;
       
     }
 
@@ -189,6 +189,24 @@
   }
 
   
+  @media screen and (max-width: 380px) {
+    .NavbarItems {
+      position: relative;
+    }
+
+    .navbar-logo {
+      position: absolute;
+      /* top: 0;
+      left: 0; */
+      transform: translate(25%, 50%);
+      font-size: 21.5px;
+      padding-top: 1.5vh;
+      
+    }
+
+  
+  }
+
   @media screen and (max-width: 350px) {
     .NavbarItems {
       position: relative;
@@ -200,7 +218,26 @@
       left: 0; */
       transform: translate(25%, 50%);
       font-size: 18.5px;
-      padding-top: 14px;
+      padding-top: 1.8vh;
+      
+    }
+
+  
+  }
+
+  
+  @media screen and (max-width: 310px) {
+    .NavbarItems {
+      position: relative;
+    }
+
+    .navbar-logo {
+      position: absolute;
+      /* top: 0;
+      left: 0; */
+      transform: translate(25%, 50%);
+      font-size: 16.5px;
+      padding-top: 2vh;
       
     }
 

@@ -2,12 +2,18 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "../styles/contact.css"
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+
 
 const ContactUs = () => {
   const form = useRef();
 
+  const navigate = useNavigate();
+
   const sendEmail = (e) => {
     e.preventDefault();
+  
+
 
 
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUB_ID)
@@ -15,6 +21,7 @@ const ContactUs = () => {
           console.log(result.text)
           toast("Message sent, Thank you!", {
             position: toast.POSITION.TOP_CENTER});
+          navigate("/")
       }, (error) => {
           console.log(error.text);
       });
@@ -76,7 +83,7 @@ const ContactUs = () => {
                     ></textarea>
                   </div>
                 </div>
-                <button className='submit-btn' type='submit'>
+                <button className='btn btn-primary' type='submit'>
                   Submit
                 </button>
               </form>

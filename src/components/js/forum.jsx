@@ -89,11 +89,9 @@ function Testerforum() {
         </div>
         <section className='postform'>
         <form onSubmit={onSubmit}>
+        <textarea type='text' name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} placeholder='Enter text...' required/>
           <div className='form-g'>
-            <input type='text' name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} placeholder='Enter text' required />
-          </div>
-          <div className='form-g'>
-            <button className='btn-post' type='submit'> Submit Post </button>
+            <button className='btn btn-primary' type='submit'> Submit Post </button>
           </div>
         </form>
         </section>
