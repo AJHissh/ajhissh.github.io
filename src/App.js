@@ -9,6 +9,8 @@ import LoginPage from './components/page-routes/login-route'
 import RegisterPage from './components/page-routes/register-route'
 import ContactPage from './components/page-routes/contact-route'
 import HomePage from './components/page-routes/home-route'
+import ForumIntro from './components/js/forum-introduction'
+import ForumRandom from './components/js/forum-random'
 
 
 
@@ -27,6 +29,8 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='Forum-Introduction' element={<ForumIntro />} />
+          <Route path='Forum-Random' element={<ForumRandom />} />
         </Routes> 
       </Router>
       <ToastContainer />

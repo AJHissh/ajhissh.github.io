@@ -178,3 +178,27 @@ div.absolute {
     background-color: white;
     
 }
+
+.table {
+    margin-top: 5vh;
+    background-color: white;
+    border-width: thick;
+    font-family: 'Courier New', monospace;
+}
+
+.table td {
+    padding-top: 5vh;
+}
+
+.table th {
+    background-color:  cornflowerblue;
+    font-weight: bold;
+}
+
+.table .TD-1 {
+    font-style: italic;
+}
+
+.table .TD-2 {
+    font-style: italic;
+}

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ajh-website.herokuapp.com/",
-  "proxy": "https://localhost:5000",
+  "proxy": "https://localhost:5000/",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
@@ -12,6 +12,8 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
+    "@headlessui/react": "^1.6.0",
+    "@heroicons/react": "^1.0.6",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
@@ -41,6 +43,7 @@
     "react-toastify": "^8.2.0",
     "redux": "^4.1.2",
     "save-dev": "^0.0.1-security",
+    "tailwindcss": "^3.0.24",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

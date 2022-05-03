@@ -11,23 +11,50 @@ import { getPosts, reset } from "../../features/posts/postSlice"
 import { createPost } from '../../features/posts/postSlice';
 
 
-function Testerforum() {
+function ForumIntro() {
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
     const {user} = useSelector((state) => state.auth)
+    const {posts, isLoading, isError, message} = useSelector((state) => state.posts)
+
+    const [text, setText] = useState('')
+    const post = [text]
+    const onSubmit = (e) => {
+      e.preventDefault()
+      dispatch(createPost({text}))
+      toast(`Thank you for posting, ${user.name}!`)
+      setText('')
+    }
+
+    useEffect(() => {
+        if (isError) {
+            console.log(message)
+        }
+
+
+        dispatch(getPosts())
+
+        return () => {
+            dispatch(reset())
+        }
+    }, [user, navigate, isError, message, dispatch])
+    
+    if (isLoading){
+        return <Loading />
+    }
     
     return (
     <div className="forum-cont">
     <section className='heading-forum'>
       <h1>
-         Welcome to the Forum, {user.name}!
+         Introduce yourself, {user.name}!
       </h1>
         <div class="forum-nav">
             <nav class="navigation hide" id="navigation">
                 <ul class="nav-list">
-                    <li class="navfor-item"> 
+                <li class="navfor-item"> 
                     <Link to='/Forum'>
                         Forums
                     </Link>
@@ -47,45 +74,29 @@ function Testerforum() {
                 <input type="text" name="q" placeholder="search ..."/>
                 <button><i class="fa fa-search"></i></button>
             </div>
+        <section className="post-content">
+            {post.length > 0 ? (
+                <div className="posts">
+                    {posts?.map((post) => (<PostForm key={post._id} post={post} user={user.name}  />))}
+                </div>
+            ) : (<h3> You have not made any posts </h3>)}
+
+        </section>
         </div>
-        <table className="table table-bordered">
-            <thead>
-                <tr>
-                    <th>General</th>
-                    <th>Description</th>
-                    <th>Posts</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>  
-                <Link to='/Forum-Introduction' >
-                Introduction 
-                </Link>
-                </td>
-                <td className="TD-1"> Introduce yourself to the forum  </td>
-            </tr>
-            <tr>
-            <td>
-            <Link to='/Forum-Random' >
-                Random Discussion
-            </Link>     
-            </td>
-            <td  className="TD-2"> Discuss anything in this thread</td>
-            </tr>
-            </tbody>
-        </table>
-        <div>
-            
-        </div>
-    <footer className="foot-forum">
-        <span>&copy;  drew hissh </span>
-    </footer>
-    </section>
-    </div>
-    
-    )
+        <section className='postform'>
+        <form onSubmit={onSubmit}>
+        <textarea type='text' name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} placeholder='Enter text...' required/>
+          <div className='form-g'>
+            <button className='btn btn-primary' type='submit'> Submit Post </button>
+          </div>
+        </form>
+        </section>
+       </section>
+       </div>
+     
+
+       )
 }
 
 
-export default Testerforum;
+export default ForumIntro;
