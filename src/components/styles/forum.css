@@ -8,6 +8,8 @@
     width: 100%;
     
     
+    
+    
 }
 
 
@@ -20,11 +22,13 @@
     padding-top: 10vh;
     /* margin-bottom: -10px; */
     
+    
 }
 
 .heading-forum h1 {
     padding-bottom: 5vh;
     font-family: 'Courier New', monospace;
+    
 
 
     
@@ -36,6 +40,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 .postform textarea {
@@ -50,8 +55,6 @@
     text-align: center;
     padding-top: 5vh;
   }
-
-
 
 
 
@@ -161,6 +164,7 @@
 .posts {
     margin-top: 5vh;
     
+    
 }
 
 div.absolute {
@@ -172,4 +176,5 @@ div.absolute {
 
 .post-content {
     background-color: white;
+    
 }

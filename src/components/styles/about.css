@@ -61,7 +61,7 @@
   background-color: #08090A; }
 
 #universe {
-  z-index: 1;
+  z-index: 99;
   position: absolute;
   overflow: hidden;
   width: 100%;

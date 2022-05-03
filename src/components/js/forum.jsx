@@ -60,11 +60,10 @@ function Testerforum() {
       </h1>
         <div class="forum-nav">
             <nav class="navigation hide" id="navigation">
-                {/* <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span> */}
                 <ul class="nav-list">
-                    <li class="navfor-item"><a href="forums.html">Forums</a></li>
-                    <li class="navfor-item"><a href="posts.html">Posts</a></li>
-                    <li class="navfor-item"><a href="detail.html">Detail</a></li>
+                    <li class="navfor-item">Forums</li>
+                    <li class="navfor-item">Posts</li>
+                    <li class="navfor-item">Detail</li>
                 </ul>
             </nav>
         </div>
