@@ -184,6 +184,9 @@ div.absolute {
     background-color: white;
     border-width: thick;
     font-family: 'Courier New', monospace;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .table td {

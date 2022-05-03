@@ -43,6 +43,7 @@ function Testerforum() {
                 <button><i class="fa fa-search"></i></button>
             </div>
         </div>
+        <div className="table-responsive">
         <table className="table table-bordered">
             <thead>
                 <tr>
@@ -72,6 +73,7 @@ function Testerforum() {
             </tr>
             </tbody>
         </table>
+        </div>
         <div>
             
         </div>
