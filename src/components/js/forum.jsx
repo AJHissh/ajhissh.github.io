@@ -1,14 +1,8 @@
 import React from "react";
 import '../styles/forum.css';
-import { useEffect } from "react";
 import {Link, useNavigate} from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
-import { toast } from "react-toastify";
-import Loading from "./Spinner-global";
-import PostForm from "./postForm";
-import {useState} from 'react';
-import { getPosts, reset } from "../../features/posts/postSlice"
-import { createPost } from '../../features/posts/postSlice';
+
 
 
 function Testerforum() {
@@ -17,6 +11,7 @@ function Testerforum() {
     const dispatch = useDispatch()
 
     const {user} = useSelector((state) => state.auth)
+
     
     return (
     <div className="forum-cont">
@@ -53,7 +48,7 @@ function Testerforum() {
                 <tr>
                     <th>General</th>
                     <th>Description</th>
-                    <th>Posts</th>
+                    <th>Date Created</th>
                 </tr>
             </thead>
             <tbody>
@@ -64,6 +59,7 @@ function Testerforum() {
                 </Link>
                 </td>
                 <td className="TD-1"> Introduce yourself to the forum  </td>
+                <td>4/21/2022</td>
             </tr>
             <tr>
             <td>
@@ -72,15 +68,16 @@ function Testerforum() {
             </Link>     
             </td>
             <td  className="TD-2"> Discuss anything in this thread</td>
+            <td>4/29/2022 </td>
             </tr>
             </tbody>
         </table>
         <div>
             
         </div>
-    <footer className="foot-forum">
+    {/* <footer className="foot-forum">
         <span>&copy;  drew hissh </span>
-    </footer>
+    </footer> */}
     </section>
     </div>
     

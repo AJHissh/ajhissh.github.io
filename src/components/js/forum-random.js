@@ -7,8 +7,8 @@ import { toast } from "react-toastify";
 import Loading from "./Spinner-global";
 import PostForm from "./postForm";
 import {useState} from 'react';
-import { getPosts, reset } from "../../features/posts/postSlice"
-import { createPost } from '../../features/posts/postSlice';
+import { getPosts, reset } from "../../features/posts/randompostSlice"
+import { createPost } from '../../features/posts/randompostSlice';
 
 
 function ForumRandom() {
@@ -51,7 +51,6 @@ function ForumRandom() {
       <h1>
          Randomness is good...sometimes, {user.name}!
       </h1>
-      <h1> / Work in progress / </h1>
         <div class="forum-nav">
             <nav class="navigation hide" id="navigation">
                 <ul class="nav-list">
@@ -75,14 +74,14 @@ function ForumRandom() {
                 <input type="text" name="q" placeholder="search ..."/>
                 <button><i class="fa fa-search"></i></button>
             </div>
-        {/* <section className="post-content">
+        <section className="post-content">
             {post.length > 0 ? (
                 <div className="posts">
                     {posts?.map((post) => (<PostForm key={post._id} post={post} user={user.name}  />))}
                 </div>
             ) : (<h3> You have not made any posts </h3>)}
 
-        </section> */}
+        </section>
         </div>
         <section className='postform'>
         <form onSubmit={onSubmit}>

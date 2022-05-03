@@ -8,8 +8,8 @@ const HomeSolar = () => {
     return (
       <div className="solar-whole"> 
         <body class="opening hide-UI view-3D zoom-large data-close controls-open" id="body-solar">
-        <p> Our solar system</p>
           <div id="data">
+
             <a class="sun" title="sun" href="#sunspeed">Sun</a>
             <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
             <a class="venus" title="venus" href="#venusspeed">Venus</a>
@@ -22,6 +22,7 @@ const HomeSolar = () => {
           </div>
           <div id="universe" class="scale-stretched">  
             <div id="galaxy">
+            <p> Our solar system</p>
               <div id="solar-system" class="earth">
                 <div id="mercury" class="orbit">
                   <div class="pos">

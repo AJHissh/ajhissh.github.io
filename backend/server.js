@@ -14,8 +14,10 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
+
 app.use('/api/user-posts', require('./routes/user-posts'))
 app.use('/api/users', require('./routes/userRoutes'))
+app.use('/api/user-posts-random', require('./routes/user-posts-random'))
 
 if (process.env.NODE_ENV == "production") {
     app.use(express.static("/app/build"));

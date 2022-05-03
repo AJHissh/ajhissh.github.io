@@ -139,13 +139,13 @@
 
 .search-box button{
     padding: 10px;
-    background-color:green;
+    background-color:cornflowerblue;
     color:#000000;
     
 }
 
 .search-box button:hover{
-    background-color: green;
+    background-color: cornflowerblue;
     color: #fff;
     box-shadow: 1px 2px 3px #fff;
     
