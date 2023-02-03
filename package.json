@@ -51,7 +51,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "client": "concurrently --kill-others \"npm run start\" \"npm run server\"",
+    "client": "concurrently --kill-others \"npm run start\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": [
