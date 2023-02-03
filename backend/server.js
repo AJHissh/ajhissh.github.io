@@ -18,11 +18,11 @@ app.use('/api/user-posts', require('./routes/user-posts'))
 app.use('/api/users', require('./routes/userRoutes'))
 
 if (process.env.NODE_ENV == "production") {
-    app.use(express.static("/app/build"));
-    app.use(express.static("/app/src/components"));
+    app.use(express.static("/~/build"));
+    app.use(express.static("/~/src/components"));
 
     app.get("*", (req, res) => {
-        res.sendFile("/app/build/index.html");
+        res.sendFile("/~/build/index.html");
     })
 }
 
