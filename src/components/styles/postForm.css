@@ -1,0 +1,49 @@
+.postform h1{
+    color: black;
+    text-align: center;
+  
+}
+
+/* .postform {
+    height: 100%;
+} */
+
+/* .showposts {
+    margin-bottom: -10vh;
+} */
+
+#text {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display:inline-block;
+}
+
+.btn-post {
+    margin-bottom: 3vh;
+}
+
+td, th {
+  
+    text-align: center;
+    vertical-align: middle;
+    white-space: auto;
+    width: 20%!important;
+    overflow-x: auto;
+    padding: 5vh;
+    text-align: center;
+
+}
+
+
+
+.table-responsive .post-date {
+    padding-top: 3vh;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.table-responsive .post-user {
+    font-weight: bold;
+    padding-top: 0.5vh;
+    font-style: italic;
+}

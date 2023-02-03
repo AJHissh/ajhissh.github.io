@@ -1,0 +1,29 @@
+FOR PRODUCTION
+
+
+1. COMMENT OUT SETUPPROXY.js
+
+
+2. ADD "proxy": "https://localhost:5000" to package.json
+
+
+3. CHANGE scripts start to "node backend/server.js"
+
+
+4. CHANGE NODE_ENV to production 
+
+ PUSH TO HEROKU
+
+    git add .
+    git commit -am "message"
+    git push heroku master
+
+
+
+FOR DEVELOPMENT
+
+1. REVERSE SETUPPROXY and set target proxy to http://localhost:5000
+
+2. CHANGE scripts start in package.json start to "react-scripts start"
+
+3. CHANGE NODE_ENV to development
