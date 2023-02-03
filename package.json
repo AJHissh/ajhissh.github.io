@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://andrew-james-hisshion-profile.onrender.com/",
-  "proxy": "https://localhost:10000",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
@@ -53,7 +52,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "client": "concurrently --kill-others \"npm run start\" \"npm run server\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm install concurrently && npm run build"
   },
   "eslintConfig": {
     "extends": [
