@@ -22,7 +22,7 @@ app.use('/api/users', require('./routes/userRoutes'))
     app.use(express.static("/app/src/components"));
 
     app.get("*", (req, res) => {
-        res.sendFile("/ajhissh.github.io/build/index.html");
+        res.sendFile("/build/index.html");
     })
 }
 
