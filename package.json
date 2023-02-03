@@ -2,7 +2,7 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ajh-website.herokuapp.com/",
+  "homepage": "https://andrew-james-hisshion-profile.onrender.com/",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
