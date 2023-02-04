@@ -31,6 +31,11 @@ const AboutContent = () => (
                 </div>
 
             </div>
+           <footer>
+                <p>Author: Andrew James Hisshion</p>
+                <p>Email: andrewhisshion@gmail.com</p>
+                <p><a href="https://www.digitalocean.com/?refcode=645edf643980&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a></p>
+          </footer>
         </div>
 );
 export default AboutContent;
